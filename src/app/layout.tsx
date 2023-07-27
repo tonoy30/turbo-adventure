@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Footer from './components/Footer'
 import { MainNav } from './components/MainNav'
 import './globals.css'
 
@@ -21,7 +22,8 @@ export default function RootLayout({
 				<header className="bg-white shadow-sm">
 					<MainNav />
 				</header>
-				<main>{children}</main>
+				<main className="container mx-auto">{children}</main>
+				<Footer />
 			</body>
 		</html>
 	)

@@ -22,7 +22,7 @@ import {
 } from '@heroicons/react/24/outline'
 import { Fragment, useState } from 'react'
 import { classNames } from '../lib/utils'
-import Logo from './Logo'
+import Logo from './icons/Logo'
 
 const products = [
 	{
@@ -67,7 +67,7 @@ export const MainNav = () => {
 	return (
 		<>
 			<nav
-				className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-6"
+				className="container mx-auto flex items-center justify-between p-4 lg:px-6"
 				aria-label="Global"
 			>
 				<div className="flex lg:flex-1">
