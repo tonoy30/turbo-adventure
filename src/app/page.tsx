@@ -86,7 +86,8 @@ const Page = () => {
 					</button>
 				</div>
 			</div>
-			<div className="flex">
+
+			<div className="container mx-auto flex flex-wrap">
 				<div className="flex flex-wrap md:-m-2 -m-1">
 					<div className="flex flex-wrap w-1/2">
 						<div className="md:p-2 p-1 w-full">
@@ -97,39 +98,39 @@ const Page = () => {
 								height={536}
 								alt=""
 								objectFit="center"
-								className="object-cover object-center block rounded-lg"
+								className="w-full object-cover object-center block rounded-lg"
 							/>
 						</div>
 					</div>
 					<div className="flex flex-wrap w-1/2">
-						<div className="flex md:p-2 p-1 w-full">
-							<div className="flex gap-4">
-								<Image
-									priority
-									src="/user2.png"
-									width={308}
-									height={260}
-									alt=""
-									className="object-cover object-center block rounded-lg"
-								/>
-								<Image
-									priority
-									src="/user3.png"
-									width={308}
-									height={260}
-									alt=""
-									className="object-cover object-center block rounded-lg"
-								/>
-							</div>
+						<div className="md:p-2 p-1 w-1/2">
+							<Image
+								priority
+								src="/user2.png"
+								width={308}
+								height={260}
+								alt=""
+								className="w-full h-full object-cover object-center block rounded-lg"
+							/>
 						</div>
-						<div className="md:p-2 p-1">
+						<div className="md:p-2 p-1 w-1/2">
+							<Image
+								priority
+								src="/user3.png"
+								width={308}
+								height={260}
+								alt=""
+								className="h-full w-full object-cover object-center block rounded-lg"
+							/>
+						</div>
+						<div className="md:p-2 p-1 w-full">
 							<Image
 								priority
 								src="/user4.png"
 								width={634}
 								height={260}
 								alt=""
-								className="object-cover object-center block rounded-lg"
+								className="h-full w-full object-cover object-center block rounded-lg"
 							/>
 						</div>
 					</div>
